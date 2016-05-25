@@ -1,0 +1,24 @@
+{
+  "name": "api",
+  "description": "",
+  "main": "",
+  "authors": [
+    "xusheng"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/xuxusheng/api",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "public/lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^2.2.4",
+    "angular": "^1.5.5",
+    "bootstrap": "^3.3.6",
+    "angular-ui-router": "^0.3.0"
+  }
+}

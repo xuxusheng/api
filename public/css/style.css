@@ -1,0 +1,26 @@
+body {
+  font: 14px "微软雅黑", "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+html,
+body,
+div,
+ul,
+li,
+a,
+input,
+img {
+    margin: 0;
+    padding: 0;
+}
+
+a,
+a:hover,
+a:link,
+a:visited {
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}

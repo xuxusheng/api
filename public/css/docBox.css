@@ -1,0 +1,65 @@
+.doc-box {
+    width: 100%;
+    min-width: 980px;
+    height: 218px;
+    box-shadow: 0 1px 7px #123a60;
+
+    color: white;
+
+    background: url('/img/docBox/bg.png');
+}
+.doc-box > div {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.doc-hd {
+    text-align: center;
+    padding-top: 25px;
+    padding-bottom: 25px;
+}
+.doc-hd h1 {
+    display: inline-block;
+    font-size: 30px;
+}
+.doc-hd h1:first-child {
+    font-family: '楷体';
+    padding-right: 30px;
+    margin-left: 2em;
+    border-right: 2px solid white;
+}
+.doc-hd h1:last-child {
+    padding-left: 30px;
+}
+
+.doc-search {
+    width: 580px;
+    height: 46px;
+    background-color: #0063C8;
+    border-radius: 3px;
+    margin-left: auto;
+    margin-right: auto;
+
+    position: relative;
+}
+.doc-search input {
+    width: 100%;
+    box-sizing: border-box;
+    height: 46px;
+    line-height: 46px;
+    border-width: 0;
+    background-color: transparent;
+    color: #fff;
+    font-size: 16px;
+    padding-left: 20px;
+    padding-right: 35px;
+    font-weight: 400;
+}
+.doc-search a {
+    position: absolute;
+    right: 10px;
+    top: 0;
+
+    line-height: 46px;
+    font-size: 20px;
+}
