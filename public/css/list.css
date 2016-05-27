@@ -1,3 +1,5 @@
+
+
 .api-id {
     display: inline-block;
     padding: 3px 8px;
@@ -6,4 +8,7 @@
 
     border-radius: 6px;
     /*background-color: #00ca85;*/
+}
+.api-id:target {
+    color: #0073D0;
 }
