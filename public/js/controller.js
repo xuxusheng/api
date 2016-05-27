@@ -42,6 +42,23 @@ app.controller('listCtrl', ['$scope', '$http', function($scope, $http) {
 	$scope.getList('card');
     $scope.getSide();
 
+    var el = $('#test');
+    var data = {
+        "name": "xusheng",
+        "age": 23
+    };
+
+    new PrettyJSON.view.Node({
+        el: el,
+        data: data
+    })
+
+    new PrettyJSON.view.Node({
+        el: $('#test2'),
+        data: data
+    })
+
+
 
 }]);
 

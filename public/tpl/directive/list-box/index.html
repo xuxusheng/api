@@ -1,0 +1,32 @@
+<div class="row">
+    <div class="col-sm-12">
+        <table class="table table-bordered">
+            <thead>
+            <tr>
+                <th>参数</th>
+                <th>值</th>
+            </tr>
+            </thead>
+            <tbody>
+            <tr>
+                <td>id</td>
+                <td>{{ val.id }}</td>
+            </tr>
+            <tr>
+                <td>url</td>
+                <td>{{ val.url }}</td>
+            </tr>
+            <tr>
+                <td>method</td>
+                <td>{{ val.method }}</td>
+            </tr>
+            <tr>
+                <td>options</td>
+                <td>
+                    <pretty-json data="val.options"></pretty-json>
+                </td>
+            </tr>
+            </tbody>
+        </table>
+    </div>
+</div>

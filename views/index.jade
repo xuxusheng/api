@@ -19,6 +19,13 @@ html(lang='en', ng-app='app')
     script(src='/js/controller.js')
     script(src='/js/directive.js')
 
+    //- use pretty-json
+    link(rel='stylesheet', href='/module/pretty-json/css/pretty-json.css')
+    script(src='/module/pretty-json/libs/underscore-min.js')
+    script(src='/module/pretty-json/libs/backbone-min.js')
+    script(src='/module/pretty-json/build/pretty-json-min.js')
+
+
   body(ng-controller='appCtrl')
     div(ui-view)
         

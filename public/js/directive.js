@@ -16,3 +16,32 @@ app.directive("side", function() {
         }
     }
 });
+
+app.directive("listBox", function() {
+    return {
+        restrict: 'E',
+        templateUrl: '/tpl/directive/list-box/index.html',
+        scope: {
+            val: '='
+        }
+    }
+});
+
+app.directive("prettyJson", function() {
+    return {
+        restrict: 'E',
+        templateUrl: '/tpl/directive/pretty-json/index.html',
+        scope: {
+            data: '='
+        },
+        link: function(scope, element, attrs) {
+            $(element).css({
+                "font-family": "consolas"
+            });
+            new PrettyJSON.view.Node({
+                el: $(element),
+                data: scope.data
+            }).expandAll();
+        }
+    }
+});
