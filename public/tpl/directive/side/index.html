@@ -1,0 +1,12 @@
+<div class="side">
+    <ul>
+        <li ng-repeat="val in nowData.sideData">
+            <h2 ng-class="{active: nowData.data.name==val.name}" ng-click="getList(val.name)">{{ val.name }}</h2>
+            <a ng-repeat="v in val.content" ng-click="goto(v)">{{ v }}</a>
+        </li>
+        <li ng-repeat="val in nowData.sideData">
+            <h2 ng-class="{active: nowData.data.name==val.name}" ng-click="getList(val.name)">{{ val.name }}</h2>
+            <a ng-repeat="v in val.content" ng-click="goto(v)">{{ v }}</a>
+        </li>
+    </ul>
+</div>

@@ -1,0 +1,14 @@
+[
+  {
+    "name": "card",
+    "content": ["card.list", "card.attachTag", "card.detachTag", "card.create", "card.delete", "card.sourceList"]
+  },
+  {
+    "name": "note",
+    "content": ["note.list", "note.create", "note.get", "note.send-msg"]
+  },
+  {
+    "name": "query",
+    "content": ["query.trans2human","invite.codeList","invite.generateCode","user.userList","user.userStatusCheck","user.userGetPerms","user.userPermsInfo","user.saveUserType","user.userShow","role.roleList","role.roleShow","role.createRole","role.deleteRole","perms.permsList","perms.permsDetailList","perms.searchPerms","perms.removePerms","perms.createEsPerms","perms.createUserPerms","mc.showSource","mc.getSourceByField","card.cardResultList","card.cardResultRefresh","tagBatch.bindTagType","tagBatch.getTagType","mc.generateTag","query.list","query.unwrap","query.bindTagType","query.changeStatus"]
+  }
+]

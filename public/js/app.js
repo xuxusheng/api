@@ -1,8 +1,12 @@
 var app = angular.module('app', ['ui.router']);
 
+app.run(['$anchorScroll', function($anchorScroll) {
+    $anchorScroll.yOffset = 48;
+}]);
+
 app.config(function($stateProvider, $urlRouterProvider) {
 
-	$urlRouterProvider.otherwise("/main")
+	$urlRouterProvider.otherwise("/main");
 
 	$stateProvider
 		.state('main', {
@@ -11,6 +15,7 @@ app.config(function($stateProvider, $urlRouterProvider) {
 		})
 		.state('list', {
 			url: '/list',
-			templateUrl: 'tpl/controller/list/index.html'
+			templateUrl: 'tpl/controller/list/index.html',
+			controller: 'listCtrl'
 		})
 });

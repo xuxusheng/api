@@ -1,11 +1,53 @@
 <div class="container-fluid container-middle">
+    <br>
+    <br>
     <div class="row">
         <div class="col-sm-2 col-sm-offset-1">
             <side></side>
         </div>
 
         <div class="col-sm-7">
-            <div ui-view></div>
+			<div ng-repeat="val in nowData.data.content">
+                <h4 class="api-id" ng-attr-id="{{ val.id }}"> {{ $index+1 + '.  ' + val.id }}</h4>
+                <div class="row">
+                    <div class="col-sm-5">
+                        <table class="table table-bordered">
+                            <thead>
+                                <tr>
+                                    <th>参数</th>
+                                    <th>值</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                <tr>
+                                    <td>id</td>
+                                    <td>{{ val.id }}</td>
+                                </tr>
+                                <tr>
+                                    <td>url</td>
+                                    <td>{{ val.url }}</td>
+                                </tr>
+                                <tr>
+                                    <td>method</td>
+                                    <td>{{ val.method }}</td>
+                                </tr>
+                                <tr>
+                                    <td>options</td>
+                                    <td>
+                                        <pre>
+{
+    "cached": {{ val.options.cached }},
+    "withCredentials": {{ val.options.withCredentials }}
+}
+                                        </pre>
+                                    </td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <hr>
+            </div>
         </div>
     </div>
 </div>

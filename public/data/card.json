@@ -1,0 +1,59 @@
+{
+	"name": "card",
+	"content": [
+        {
+            "id": "card.list", 
+            "url": "/admin/card/list", 
+            "method": "POST", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "card.attachTag", 
+            "url": "/admin/card/attach-tag", 
+            "method": "POST", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "card.detachTag", 
+            "url": "/admin/card/detach-tag", 
+            "method": "POST", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "card.create", 
+            "url": "/admin/card/create", 
+            "method": "POST", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "card.delete", 
+            "url": "/admin/card/delete", 
+            "method": "POST", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "card.sourceList", 
+            "url": "/admin/card/list-tag-source", 
+            "method": "POST", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }
+    ]
+}

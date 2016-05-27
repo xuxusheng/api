@@ -1,0 +1,35 @@
+.side {
+    position: fixed;
+    overflow: auto;
+    width: 16.6%;
+}
+.side li {
+    position: relative;
+    overflow: hidden;
+}
+.side li h2 {
+    cursor: pointer;
+	padding: 3px 5px 3px;
+	margin-top: 10px;
+    margin-left: -4px;
+
+    transition: margin 0.15s linear;
+
+    border-left: 4px solid #0073D0;
+}
+.side li h2:hover {
+    margin-left: 0;
+}
+.side li h2.active {
+    margin-left: 0;
+}
+.side li a {
+    cursor: pointer;
+    display: none;
+
+    height: 24px;
+    line-height: 24px;
+}
+.side li h2.active~a {
+    display: block;
+}

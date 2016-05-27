@@ -1,0 +1,9 @@
+.api-id {
+    display: inline-block;
+    padding: 3px 8px;
+
+    color: #333;
+
+    border-radius: 6px;
+    /*background-color: #00ca85;*/
+}

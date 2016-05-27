@@ -1,0 +1,60 @@
+{
+    "name": "note",
+    "content": [
+        {
+            "id": "note.list", 
+            "url": "/admin/notification/list", 
+            "method": "GET", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "note.create", 
+            "url": "/admin/notification/create", 
+            "method": "post", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "note.get", 
+            "url": "/admin/notification/get", 
+            "method": "post", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true
+            }
+        }, 
+        {
+            "id": "note.send-msg", 
+            "url": "/admin/notification/send", 
+            "method": "post", 
+            "options": {
+                "cached": false, 
+                "withCredentials": true, 
+                "requestSchema": {
+                    "type": "object", 
+                    "required": [
+                        "nid", 
+                        "uids"
+                    ], 
+                    "properties": {
+                        "nid": {
+                            "type": "id"
+                        }, 
+                        "uids": {
+                            "type": "array", 
+                            "items": {
+                                "type": "id"
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    ]
+}
+
